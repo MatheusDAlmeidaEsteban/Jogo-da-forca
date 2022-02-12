@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+body{
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+}
+h1{
+    font-weight: 600 ;
+    font-family: cursive    ;
+    font-size: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#imagem{
+    background-image: url("../image/forca0.jpg");
+    width: 230px;
+    height: 230px;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+#palavra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    margin-top: 20px;
+}
+
+.letra{
+    width: 18px;
+    align-items: center;
+    border-bottom: 1px solid #1d1e20;
+    margin-left: 3.5px;
+    margin-right: 3.5px;
+}
+
+#teclado{
+    margin-top: 35px;
+}
+
+.teclas button{
+    width: 44px;
+    height: 44px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px gray;
+    border-radius: 10px;
+    font-size: 700;
+    background-color: white;
+    color: black;
+
+}
+.teclas button:hover{
+    transform:scale(1.2);
+}
+
+#categoria{
+    margin-top: 30px;
+    font-size: 1.3em;
+    align-items: center;
+}
+
+footer{
+    background: #1d1e20;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;   
+}
+.logo{
+    width: 45px;
+    height: 40px;
+    border: 15px;
+    border-radius: 10px;
+}
+
+.Li{
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-decoration:none;
+    list-style-type:none;
+}
+#autor{
+    height: auto;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.cadastrarPalavras{
+    height: 215px;
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#Send{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background: #1d1e20;
+    color: #fff;
+    border-radius: 5px;
+    transition: tranform 0.3s ease;
+}
+select{
+    font-size: 1.0rem;
+    
+}
+
+@media(min-width: 1280px){
+    .h1{
+        width: 100vw;
+        height: 7vh;
+    }
+    #palavra{
+        font-size: 1.7rem;
+        margin-top: 10px;
+    }
+    #categoria{
+        font-size: 1.8rem;
+        margin-top: 15px;
+    }
+    #imagem{
+        width: 222px;
+        height: 222px;
+    }
+    .teclas button{
+        width: 45px;
+        height: 45px;
+    }
+
+    #autor{
+        font-size: 20px;
+    }
+
+    .Li{
+        font-size: 30px;
+    }
+    .textarea{
+        width: 500px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    #Send{
+        width: 100px;
+        height: 40px;
+    }
+} 
