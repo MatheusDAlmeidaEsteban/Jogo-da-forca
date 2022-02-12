@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<!-- Corpo do site-->
+<body>
+    <h1 class="h1">Jogo Da Forca</h1>
+    <div class="container">
+        <div id="imagem"></div>
+        <div id="palavra">
+            
+        </div>
+        <div id="teclado">
+            <div class="teclas">
+                <button id="A" onclick="verificarLetra('A')">A</button>
+                <button id="B" onclick="verificarLetra('B')">B</button>
+                <button id="C" onclick="verificarLetra('C')">C</button>
+                <button id="D" onclick="verificarLetra('D')">D</button>
+                <button id="E" onclick="verificarLetra('E')">E</button>
+                <button id="F" onclick="verificarLetra('F')">F</button>
+                <button id="G" onclick="verificarLetra('G')">G</button>
+                <button id="H" onclick="verificarLetra('H')">H</button>
+                <button id="I" onclick="verificarLetra('I')">I</button>
+            </div>
+
+            <div class="teclas">
+                <button id="J" onclick="verificarLetra('J')">J</button>
+                <button id="K" onclick="verificarLetra('K')">K</button>
+                <button id="L" onclick="verificarLetra('L')">L</button>
+                <button id="M" onclick="verificarLetra('M')">M</button>
+                <button id="N" onclick="verificarLetra('N')">N</button>
+                <button id="O" onclick="verificarLetra('O')">O</button>
+                <button id="P" onclick="verificarLetra('P')">P</button>
+                <button id="Q" onclick="verificarLetra('Q')">Q</button>
+                <button id="R" onclick="verificarLetra('R')">R</button>
+            </div>
+
+            <div class="teclas">
+                <button id="S" onclick="verificarLetra('S')">S</button>
+                <button id="T" onclick="verificarLetra('T')">T</button>
+                <button id="U" onclick="verificarLetra('U')">U</button>
+                <button id="V" onclick="verificarLetra('V')">V</button>
+                <button id="W" onclick="verificarLetra('W')">W</button>
+                <button id="X" onclick="verificarLetra('X')">X</button>
+                <button id="Y" onclick="verificarLetra('Y')">Y</button>
+                <button id="Z" onclick="verificarLetra('Z')">Z</button>
+                <button name="Cadastrar" id="cadastrar">+</button>
+            </div>
+        </div>
+        <div id="categoria"></div>  
+
+        <!-- Formulario -->
+        <div class="cadastrarPalavras">
+            <form id="formulario" action=""> 
+                <li class=Li>Digite a palavra: </li>
+                <li class=Li id="Adicionar">
+                     <!-- Digitar a palavra-->
+                     <textarea class="textarea"  id="palavraEnviada" name="palavraEnviada" placeholder="Digite a palavra sem acento e com letra maiúscula" rows="2" cols="50"></textarea>
+                   
+                </li>
+    
+                <li class=Li>
+                    Selecione a categoria
+                    <select name="Categorias" id="categoriaEnviada">
+                        <option value="LUGARES">LUGARES</option>
+                        <option value="TRANSPORTE">TRANSPORTE</option>
+                        <option value="OBJETOS">OBJETOS</option>
+                        <option value="ALIMENTOS">ALIMENTOS</option>
+                        <option value="ANIMAIS">ANIMAIS</option>
+                    </select>
+                    
+                </li>
+
+                <li class=Li>
+                    <button id="Send" name="Send"type="submit" >Cadastrar</button>
+                </li>
+            </form>
+
+        </div>
+                
+        
+    </div>
+    
+</body>
+
+<!-- Rodape da pagina-->
+    <footer class="footer">
+        <ul>
+            <li>
+                <p id="autor">Desenvolvido por Matheus Esteban ©2022 </p>
+            </li>
+        </ul>
+        <ul class="menu">
+
+            <li>    
+                <!--Lindedin Link-->
+            <a href="https://www.linkedin.com/in/matheus-de-almeida-esteban-50277422b/" target="_blank">
+                <img class="logo"src="image/LinkedinLogo.jfif">
+            </a>
+
+            <!--Git link-->
+                <a href="https://github.com/MatheusDAlmeidaEsteban" target="_blank">
+                <img class="logo"src="image/gitLogo.png">
+                </a>
+            </li>
+    </footer>
+    <script src="js/forca.js"></script>
+    <script src="js/cadastrar.js"></script>
+   
+</html>
